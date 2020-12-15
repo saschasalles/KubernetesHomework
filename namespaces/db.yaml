@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: db
+
+
+# Les namespaces sont destinés à être utilisés dans les environnements ayant
+# de nombreux utilisateurs répartis en plusieurs équipes ou projets. 
+# Pour les clusters de quelques dizaines d'utilisateurs, 
+# vous n'avez pas besoin d'utiliser de namespaces. 
+# Commencez à utiliser des namespaces lorsque vous avez besoin des fonctionnalités qu'ils fournissent.
+

@@ -1,0 +1,15 @@
+apiVersion: kubedb.com/v1alpha2
+kind: MySQL
+metadata:
+  name: mysql-db
+  namespace: db
+spec:
+  version: "5.7.31"
+  storageType: Durable
+  storage:
+    storageClassName: "ibmc-file-gold"
+    accessModes:
+    - ReadWriteOnce
+    resources:
+      requests:
+        storage: 1Gi
